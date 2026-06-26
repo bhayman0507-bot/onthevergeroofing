@@ -139,3 +139,21 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+.sticky-call {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #f58220;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.sticky-call:hover {
+    background: #d96f12;
+}
