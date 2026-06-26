@@ -1,1 +1,1 @@
-iamge files go here
+image files go here
