@@ -1,1 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+body {
+    background: #ffffff;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: #1c1c1c;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f58220;
+}
+
+/* Hero */
+.hero {
+    height: 80vh;
+    background: url('../images/hero.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    color: white;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #f58220;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn2 {
+    background: #1e5aa8;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Trust section */
+.trust .card h3 {
+    font-size: 28px;
+    color: #1e5aa8;
+}
+
+/* About */
+.about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
