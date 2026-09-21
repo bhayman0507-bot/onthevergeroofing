@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://onthevergeroofing.com/sitemap.xml
+Sitemap: https://www.onthevergeroofing.com/sitemap.xml
