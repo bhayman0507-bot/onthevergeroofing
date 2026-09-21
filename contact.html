@@ -120,14 +120,6 @@
                     Tell us a little about the work you need.
                 </p>
 
-                <!-- Formspree messages -->
-                <div data-fs-success class="form-success">
-                    Your enquiry has been sent successfully.
-                    We'll be in touch shortly.
-                </div>
-
-                <div data-fs-error class="form-error"></div>
-
                 <form
                     id="contact-form"
                     action="https://formspree.io/f/xjykwyel"
@@ -387,6 +379,27 @@
     Call On The Verge Roofing
 </a>
 
+<script>
+    window.formspree =
+        window.formspree ||
+        function () {
+            (formspree.q = formspree.q || []).push(arguments);
+        };
+
+    formspree('initForm', {
+        formElement: '#contact-form',
+        formId: 'xjykwyel',
+
+        onSuccess: function () {
+            window.location.href = 'thank-you.html';
+        }
+    });
+</script>
+
+<script
+    src="https://unpkg.com/@formspree/ajax@1"
+    defer>
+</script>
 <script>
     window.formspree =
         window.formspree ||
