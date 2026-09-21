@@ -387,8 +387,6 @@
     Call On The Verge Roofing
 </a>
 
-
-<!-- Formspree AJAX -->
 <script>
     window.formspree =
         window.formspree ||
@@ -398,7 +396,11 @@
 
     formspree('initForm', {
         formElement: '#contact-form',
-        formId: 'xjykwyel'
+        formId: 'xjykwyel',
+
+        onSuccess: function () {
+            window.location.href = 'thank-you.html';
+        }
     });
 </script>
 
@@ -406,6 +408,3 @@
     src="https://unpkg.com/@formspree/ajax@1"
     defer>
 </script>
-
-</body>
-</html>
