@@ -1166,3 +1166,6 @@ footer {
     }
 
 }
+.page-hero h1 span {
+    display: block;
+}
