@@ -389,29 +389,6 @@
     formspree('initForm', {
         formElement: '#contact-form',
         formId: 'xjykwyel',
-
-        renderSuccess: function () {
-            window.location.href = 'thank-you.html';
-        }
-    });
-</script>
-
-<script
-    src="https://unpkg.com/@formspree/ajax@1"
-    defer>
-</script>
-    
-<script>
-    window.formspree =
-        window.formspree ||
-        function () {
-            (formspree.q = formspree.q || []).push(arguments);
-        };
-
-    formspree('initForm', {
-        formElement: '#contact-form',
-        formId: 'xjykwyel',
-
         onSuccess: function () {
             window.location.href = 'thank-you.html';
         }
@@ -420,5 +397,7 @@
 
 <script
     src="https://unpkg.com/@formspree/ajax@1"
+    defer>
+</script>    
     defer>
 </script>
