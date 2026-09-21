@@ -1,159 +1,410 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body {
-    background: #ffffff;
-    color: #222;
-    line-height: 1.6;
-}
+    <title>On The Verge Roofing Ltd | Roofing Contractors Wrexham</title>
 
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
+    <meta name="description" content="On The Verge Roofing Ltd provides professional roofing services across Wrexham, Chester, North Wales and Shropshire. New roofs, roof repairs, flat roofing, leadwork, fascias, soffits and guttering. Call for a free quote.">
 
-/* Header */
-header {
-    background: #1c1c1c;
-    padding: 15px 0;
-}
+    <meta name="robots" content="index, follow">
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-.logo img {
-    height: 60px;
-}
+<body>
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-}
+    <!-- Sticky mobile call button -->
+    <a href="tel:01978722789" class="sticky-call" aria-label="Call On The Verge Roofing">
+        📞 Call Now
+    </a>
 
-nav a:hover {
-    color: #f58220;
-}
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
 
-/* Hero */
-.hero {
-    height: 80vh;
-    background: url('../images/hero.jpg') center/cover no-repeat;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="On The Verge Roofing Ltd">
+            </a>
 
-.hero .overlay {
-    background: rgba(0,0,0,0.6);
-    padding: 40px;
-    color: white;
-    width: 100%;
-}
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 15px;
-}
+            <div class="header-contact">
+                <span>Call us today</span>
+                <a href="tel:01978722789">01978 722789</a>
+            </div>
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
+        </div>
+    </header>
 
-.buttons {
-    margin-top: 20px;
-}
+    <main>
 
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: #f58220;
-    color: white;
-    text-decoration: none;
-    margin: 5px;
-    border-radius: 5px;
-    font-weight: bold;
-}
+        <!-- Hero -->
+        <section class="hero">
 
-.btn2 {
-    background: #1e5aa8;
-}
+            <div class="hero-overlay">
 
-/* Sections */
-section {
-    padding: 60px 0;
-    text-align: center;
-}
+                <div class="container hero-content">
 
-h2 {
-    margin-bottom: 30px;
-    font-size: 32px;
-}
+                    <span class="hero-eyebrow">Professional Roofing Contractors</span>
 
-/* Cards */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    width: 90%;
-    margin: auto;
-}
+                    <h1>
+                        Reliable Roofing Services Across
+                        <span>Wrexham, Chester & North Wales</span>
+                    </h1>
 
-.card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    font-weight: bold;
-}
+                    <p>
+                        Over 25 years of roofing experience delivering
+                        quality workmanship for homes and businesses across
+                        North Wales, Shropshire and surrounding areas.
+                    </p>
 
-/* Trust section */
-.trust .card h3 {
-    font-size: 28px;
-    color: #1e5aa8;
-}
+                    <div class="hero-buttons">
+                        <a href="tel:01978722789" class="btn btn-primary">
+                            Call 01978 722789
+                        </a>
 
-/* About */
-.about p {
-    max-width: 800px;
-    margin: auto;
-    font-size: 18px;
-}
+                        <a href="contact.html" class="btn btn-secondary">
+                            Get a Free Quote
+                        </a>
+                    </div>
 
-/* Footer */
-footer {
-    background: #1c1c1c;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+                    <div class="hero-trust">
+                        <span>✓ 25+ Years Experience</span>
+                        <span>✓ Fully Insured</span>
+                        <span>✓ Workmanship Guarantee</span>
+                    </div>
 
-.sticky-call {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #f58220;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    z-index: 999;
-}
+                </div>
 
-.sticky-call:hover {
-    background: #d96f12;
-}
+            </div>
+
+        </section>
+
+        <!-- Trust Bar -->
+        <section class="trust-bar">
+
+            <div class="container trust-grid">
+
+                <div class="trust-item">
+                    <strong>25+</strong>
+                    <span>Years Experience</span>
+                </div>
+
+                <div class="trust-item">
+                    <strong>✓</strong>
+                    <span>Fully Insured</span>
+                </div>
+
+                <div class="trust-item">
+                    <strong>✓</strong>
+                    <span>Free Quotes</span>
+                </div>
+
+                <div class="trust-item">
+                    <strong>✓</strong>
+                    <span>Workmanship Guarantee</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Services -->
+        <section class="services section">
+
+            <div class="container">
+
+                <span class="section-label">What We Do</span>
+
+                <h2>Professional Roofing Services</h2>
+
+                <p class="section-intro">
+                    From repairs and maintenance to complete new roofs,
+                    we provide a comprehensive range of roofing services
+                    for domestic and commercial customers.
+                </p>
+
+                <div class="service-grid">
+
+                    <a href="services.html" class="service-card">
+                        <div class="service-icon">🏠</div>
+                        <h3>New Roofs</h3>
+                        <p>
+                            Complete roofing solutions built with quality
+                            materials and professional workmanship.
+                        </p>
+                    </a>
+
+                    <a href="services.html" class="service-card">
+                        <div class="service-icon">🔨</div>
+                        <h3>Roof Repairs</h3>
+                        <p>
+                            Professional repairs to help protect your
+                            property from leaks and weather damage.
+                        </p>
+                    </a>
+
+                    <a href="services.html" class="service-card">
+                        <div class="service-icon">🏢</div>
+                        <h3>Flat Roofing</h3>
+                        <p>
+                            Reliable flat roofing solutions for a range
+                            of domestic and commercial properties.
+                        </p>
+                    </a>
+
+                    <a href="services.html" class="service-card">
+                        <div class="service-icon">◆</div>
+                        <h3>Slate & Tile Roofing</h3>
+                        <p>
+                            Traditional and modern slate and tile roofing
+                            carried out to a high standard.
+                        </p>
+                    </a>
+
+                    <a href="services.html" class="service-card">
+                        <div class="service-icon">⚒</div>
+                        <h3>Leadwork</h3>
+                        <p>
+                            Professional leadwork for roofs, valleys,
+                            flashings and other roofing details.
+                        </p>
+                    </a>
+
+                    <a href="services.html" class="service-card">
+                        <div class="service-icon">🏡</div>
+                        <h3>Chimney Repairs</h3>
+                        <p>
+                            Repairs and maintenance to help keep chimney
+                            structures safe and weatherproof.
+                        </p>
+                    </a>
+
+                    <a href="services.html" class="service-card">
+                        <div class="service-icon">▰</div>
+                        <h3>Fascias & Soffits</h3>
+                        <p>
+                            Replacement and installation of fascias and
+                            soffits to protect and finish your roofline.
+                        </p>
+                    </a>
+
+                    <a href="services.html" class="service-card">
+                        <div class="service-icon">💧</div>
+                        <h3>Guttering</h3>
+                        <p>
+                            Guttering services to help direct rainwater
+                            safely away from your property.
+                        </p>
+                    </a>
+
+                </div>
+
+                <a href="services.html" class="text-link">
+                    View All Roofing Services →
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- About / Why Choose Us -->
+        <section class="about-section section">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+                    <img
+                        src="images/hero.jpg"
+                        alt="Roofing work by On The Verge Roofing Ltd"
+                    >
+                </div>
+
+                <div class="about-content">
+
+                    <span class="section-label">Why Choose Us</span>
+
+                    <h2>Roofing Experience You Can Rely On</h2>
+
+                    <p>
+                        At On The Verge Roofing Ltd, we have over 25 years
+                        of experience providing professional roofing services
+                        throughout Wrexham, Chester, North Wales, Shropshire
+                        and surrounding areas.
+                    </p>
+
+                    <p>
+                        We work across a wide range of roofing projects,
+                        from individual repairs and maintenance through to
+                        complete new roofs.
+                    </p>
+
+                    <ul class="check-list">
+                        <li>25+ years of roofing experience</li>
+                        <li>Fully insured</li>
+                        <li>Free quotations</li>
+                        <li>Workmanship guarantee</li>
+                        <li>Domestic and commercial roofing</li>
+                        <li>Quality workmanship and professional service</li>
+                    </ul>
+
+                    <a href="about.html" class="btn btn-primary">
+                        Find Out More About Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Areas -->
+        <section class="areas section">
+
+            <div class="container">
+
+                <span class="section-label">Areas We Cover</span>
+
+                <h2>Roofing Services Across the Region</h2>
+
+                <p class="section-intro">
+                    We provide professional roofing services throughout
+                    Wrexham, Chester, North Wales, Shropshire and
+                    surrounding areas.
+                </p>
+
+                <div class="area-grid">
+
+                    <div class="area-card">
+                        <h3>Wrexham</h3>
+                        <p>Roofing services throughout Wrexham and surrounding areas.</p>
+                    </div>
+
+                    <div class="area-card">
+                        <h3>Chester</h3>
+                        <p>Professional roofing services for homes and businesses in Chester.</p>
+                    </div>
+
+                    <div class="area-card">
+                        <h3>North Wales</h3>
+                        <p>Roof repairs, new roofs and more across North Wales.</p>
+                    </div>
+
+                    <div class="area-card">
+                        <h3>Shropshire</h3>
+                        <p>Roofing services available across Shropshire and nearby areas.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Call To Action -->
+        <section class="cta-section">
+
+            <div class="container">
+
+                <span class="section-label">Need a Roofer?</span>
+
+                <h2>Get Your Free Roofing Quote</h2>
+
+                <p>
+                    Whether you need a repair, maintenance work or a
+                    complete new roof, get in touch with our team today.
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="tel:01978722789" class="btn btn-primary">
+                        Call 01978 722789
+                    </a>
+
+                    <a href="tel:07578676880" class="btn btn-outline">
+                        Mobile: 07578 676880
+                    </a>
+
+                    <a href="contact.html" class="btn btn-secondary">
+                        Request a Free Quote
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <img
+                    src="images/logo.png"
+                    alt="On The Verge Roofing Ltd"
+                >
+
+                <p>
+                    Professional roofing services across Wrexham,
+                    Chester, North Wales, Shropshire and surrounding areas.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Contact Us</h3>
+
+                <a href="tel:01978722789">
+                    01978 722789
+                </a>
+
+                <a href="tel:07578676880">
+                    07578 676880
+                </a>
+
+                <a href="contact.html">
+                    Request a Free Quote
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 On The Verge Roofing Ltd. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
